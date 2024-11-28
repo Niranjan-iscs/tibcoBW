@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/html" xmlns:tns="http://www.example.org/html" elementFormDefault="qualified">
+
+    <complexType name="paramsType">
+    	<sequence>
+    		<element name="name" type="string" maxOccurs="1" minOccurs="0"></element>
+    		<element name="value" type="string" maxOccurs="1" minOccurs="0"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="variablesType">
+    	<sequence>
+    		<element name="params" type="tns:paramsType" maxOccurs="unbounded" minOccurs="0"></element>
+    	</sequence>
+    </complexType>
+
+    <element name="variables" type="tns:variablesType"></element>
+</schema>

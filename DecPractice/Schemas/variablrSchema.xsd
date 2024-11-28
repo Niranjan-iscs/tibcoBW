@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/variablrSchema" xmlns:tns="http://www.example.org/variablrSchema" elementFormDefault="qualified">
+
+    <complexType name="variableType">
+    	<sequence>
+    		<element name="template" type="string"></element>
+    	</sequence>
+    </complexType>
+
+    <element name="variable" type="tns:variableType"></element>
+</schema>
